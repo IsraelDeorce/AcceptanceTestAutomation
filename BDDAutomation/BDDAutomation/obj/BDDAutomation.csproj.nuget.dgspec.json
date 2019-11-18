@@ -1,0 +1,103 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\israel_deorce_vieira\\git\\PUCRS\\mangan\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\israel_deorce_vieira\\git\\PUCRS\\mangan\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\israel_deorce_vieira\\git\\PUCRS\\mangan\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj",
+        "projectName": "BDDAutomation",
+        "projectPath": "C:\\Users\\israel_deorce_vieira\\git\\PUCRS\\mangan\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj",
+        "packagesPath": "C:\\Users\\israel_deorce_vieira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\israel_deorce_vieira\\git\\PUCRS\\mangan\\BDDAutomation\\BDDAutomation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\israel_deorce_vieira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://dcsartifacts.dell.com/artifactory/api/nuget/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "IKVM": {
+              "target": "Package",
+              "version": "[8.1.5717, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Selenium.Chrome.WebDriver": {
+              "target": "Package",
+              "version": "[77.0.0, )"
+            },
+            "Selenium.Utils": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.1.62, )"
+            },
+            "SpecFlow.Tools.MsBuild.Generation": {
+              "target": "Package",
+              "version": "[3.1.62, )"
+            },
+            "SpecFlow.xUnit": {
+              "target": "Package",
+              "version": "[3.1.62, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
