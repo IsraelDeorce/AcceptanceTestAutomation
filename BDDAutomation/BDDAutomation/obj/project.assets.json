@@ -802,16 +802,16 @@
           "build/Selenium.Chrome.WebDriver.targets": {}
         }
       },
-      "Selenium.Support/3.4.0": {
+      "Selenium.Support/3.141.0": {
         "type": "package",
         "dependencies": {
-          "Selenium.WebDriver": "3.4.0"
+          "Selenium.WebDriver": "3.141.0"
         },
         "compile": {
-          "lib/net40/WebDriver.Support.dll": {}
+          "lib/netstandard2.0/WebDriver.Support.dll": {}
         },
         "runtime": {
-          "lib/net40/WebDriver.Support.dll": {}
+          "lib/netstandard2.0/WebDriver.Support.dll": {}
         }
       },
       "Selenium.Utils/1.0.0": {
@@ -3185,10 +3185,10 @@
         "selenium.chrome.webdriver.nuspec"
       ]
     },
-    "Selenium.Support/3.4.0": {
-      "sha512": "K+kyZV0iDn2h4hc1es1R4v+M6rULbkisUIAUU4unCNSf4LLAIsOVGMvcHo+9Zdrx83B5LFhAf31HAYv21L3riQ==",
+    "Selenium.Support/3.141.0": {
+      "sha512": "F4sxMCXGyqWtbw5qsniJRgza2UsBnslHwFgNA2p7hPxvJhqg73lyXu/ZscJ7FSfRvq3eJrosysv92+4sZ3vWsg==",
       "type": "package",
-      "path": "selenium.support/3.4.0",
+      "path": "selenium.support/3.141.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3196,7 +3196,11 @@
         "lib/net35/WebDriver.Support.xml",
         "lib/net40/WebDriver.Support.dll",
         "lib/net40/WebDriver.Support.xml",
-        "selenium.support.3.4.0.nupkg.sha512",
+        "lib/net45/WebDriver.Support.dll",
+        "lib/net45/WebDriver.Support.xml",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.3.141.0.nupkg.sha512",
         "selenium.support.nuspec"
       ]
     },
@@ -6661,6 +6665,7 @@
       "Microsoft.NET.Test.Sdk >= 16.4.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Selenium.Chrome.WebDriver >= 77.0.0",
+      "Selenium.Support >= 3.141.0",
       "Selenium.Utils >= 1.0.0",
       "Selenium.WebDriver >= 3.141.0",
       "SpecFlow >= 3.1.62",
@@ -6677,11 +6682,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\israel_deorce_vieira\\git\\PUCRS\\mangan\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj",
+      "projectUniqueName": "C:\\Users\\israel_deorce_vieira\\git\\PUCRS\\AcceptanceTestAutomation\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj",
       "projectName": "BDDAutomation",
-      "projectPath": "C:\\Users\\israel_deorce_vieira\\git\\PUCRS\\mangan\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj",
+      "projectPath": "C:\\Users\\israel_deorce_vieira\\git\\PUCRS\\AcceptanceTestAutomation\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj",
       "packagesPath": "C:\\Users\\israel_deorce_vieira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\israel_deorce_vieira\\git\\PUCRS\\mangan\\BDDAutomation\\BDDAutomation\\obj\\",
+      "outputPath": "C:\\Users\\israel_deorce_vieira\\git\\PUCRS\\AcceptanceTestAutomation\\BDDAutomation\\BDDAutomation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6730,6 +6735,10 @@
             "target": "Package",
             "version": "[77.0.0, )"
           },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[3.141.0, )"
+          },
           "Selenium.Utils": {
             "target": "Package",
             "version": "[1.0.0, )"
@@ -6776,16 +6785,6 @@
       "warningLevel": 1,
       "message": "Package 'IKVM 8.1.5717' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
       "libraryId": "IKVM",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.2"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Selenium.Support 3.4.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
-      "libraryId": "Selenium.Support",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.2"
       ]

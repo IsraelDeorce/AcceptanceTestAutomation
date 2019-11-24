@@ -19,7 +19,7 @@ namespace BDDAutomation.Tests.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class UserAdminFeature : Xunit.IClassFixture<UserAdminFeature.FixtureData>, System.IDisposable
+    public partial class UserSignInFeature : Xunit.IClassFixture<UserSignInFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,10 +28,10 @@ namespace BDDAutomation.Tests.Features
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "UserAdmin.feature"
+#line 1 "UserSignIn.feature"
 #line hidden
         
-        public UserAdminFeature(UserAdminFeature.FixtureData fixtureData, BDDAutomation_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public UserSignInFeature(UserSignInFeature.FixtureData fixtureData, BDDAutomation_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,7 +40,7 @@ namespace BDDAutomation.Tests.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "UserAdmin", "\tWebsite admins want to manage users", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "UserSignIn", "\tUsers want to manage their account", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -80,15 +80,15 @@ namespace BDDAutomation.Tests.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Admin Login")]
-        [Xunit.TraitAttribute("FeatureTitle", "UserAdmin")]
-        [Xunit.TraitAttribute("Description", "Admin Login")]
+        [Xunit.SkippableFactAttribute(DisplayName="User Login")]
+        [Xunit.TraitAttribute("FeatureTitle", "UserSignIn")]
+        [Xunit.TraitAttribute("Description", "User Login")]
         [Xunit.TraitAttribute("Category", "basic")]
-        public virtual void AdminLogin()
+        public virtual void UserLogin()
         {
             string[] tagsOfScenario = new string[] {
                     "basic"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Admin Login", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User Login", null, new string[] {
                         "basic"});
 #line 5
 this.ScenarioInitialize(scenarioInfo);
@@ -111,13 +111,16 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 6
- testRunner.Given("That I am on the edgewords web site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on the automationpractice home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
- testRunner.When("I login as an administrator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click on the Sign In Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
- testRunner.Then("I see the full admin list of options", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I provide my email and password to login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 9
+ testRunner.Then("I should be redirected to my account page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -130,12 +133,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                UserAdminFeature.FeatureSetup();
+                UserSignInFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                UserAdminFeature.FeatureTearDown();
+                UserSignInFeature.FeatureTearDown();
             }
         }
     }
