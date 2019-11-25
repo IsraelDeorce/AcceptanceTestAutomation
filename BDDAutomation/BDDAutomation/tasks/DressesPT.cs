@@ -18,9 +18,10 @@ namespace BDDAutomation.tasks
       return dressesPageObject.GetDresses();
     }
 
-    public void AddDressToCart(int dressIndex)
+    public void AddDressToCart(string dressName)
     {
-      dressesPageObject.GetAddToCartButton(dressIndex).Click();
+      dressesPageObject.GetDressImage(dressName).Click();
+      dressesPageObject.GetAddToCartButton().Click();
     }
 
     public IWebElement VerifyAddedToCart()

@@ -53,7 +53,7 @@ namespace BDDAutomation.tests.steps
     [When(@"I decide to add a dress to the shopping cart by clicking on the add to cart button")]
     public void WhenIDecideToAddADressToTheShoppingCartByClickingOnTheAddToCartButton()
     {
-      dressesPt.AddDressToCart(2);
+      dressesPt.AddDressToCart("Printed Dress");
     }
 
     [Then(@"I should visualize the list of dresses")]
@@ -67,7 +67,7 @@ namespace BDDAutomation.tests.steps
     [Then(@"I should see the dress added in the shopping cart")]
     public void ThenIShouldSeeTheDressAddedInTheShoppingCart()
     {
-      //Assert.NotNull(dressesPt.VerifyAddedToCart());
+      Assert.NotNull(dressesPt.VerifyAddedToCart());
       WebDriver.Instance.closeWindow();
     }
   }

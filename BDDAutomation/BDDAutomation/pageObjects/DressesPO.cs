@@ -23,31 +23,13 @@ namespace BDDAutomation.pageObjects
       return webDriver.driver.FindElements(By.XPath("//ul[@class='product_list grid row']"));
     }
 
-    public IWebElement GetAddToCartButton(int index)
+    public IWebElement GetDressImage(string dressName)
     {      
-      webDriver.driver.FindElement(By.XPath($"/html[1]/body[1]/div[1]/div[2]/div[1]/div[3]/div[2]/ul[1]/li[{index}]/div[1]/div[1]/div[1]/a[1]")).Click();
-      //IWebElement element = webDriver.driver.FindElement(By.XPath("//span[contains(text(),'Add to cart')]"));
-      //Console.WriteLine(element);
-      //element.Click();
-
-      //WebDriverWait wait = new WebDriverWait(webDriver.driver, TimeSpan.FromSeconds(30));
-      Thread.Sleep(10000);
-      //List<string> lstWindow = webDriver.driver.WindowHandles.ToList();
-      //foreach (var handle in lstWindow)
-      //{
-       // Console.WriteLine(handle);
-       // webDriver.driver.SwitchTo().Window(handle);
-     // }
-      IWebElement element = webDriver.driver.FindElement(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[3]/form[1]/div[1]/div[3]/div[1]/p[1]/button[1]"));
-      Actions action = new Actions(webDriver.driver);
-      action.Click(element);
-      action.Perform();
-      //IWebElement element = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath("/html[1]/body[1]/div[1]/div[1]/div[3]/form[1]/div[1]/div[3]/div[1]/p[1]/button[1]")));
-
-     
-
-     // element.Click();
-      return element;
+      return webDriver.driver.FindElement(By.PartialLinkText(dressName));
+    }
+    public IWebElement GetAddToCartButton()
+    {
+      return webDriver.driver.FindElement(By.Name("Submit"));
     }
 
     public IWebElement GetCartModal()
