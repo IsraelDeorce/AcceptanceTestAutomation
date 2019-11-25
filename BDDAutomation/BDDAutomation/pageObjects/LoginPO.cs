@@ -3,11 +3,11 @@ using OpenQA.Selenium;
 
 namespace BDDAutomation.pageObjects
 {
-  class LoginPagePO
+  class LoginPO
   {
     readonly WebDriver webDriver;
 
-    public LoginPagePO()
+    public LoginPO()
     {
       webDriver = WebDriver.Instance;
     }

@@ -2,13 +2,13 @@
 
 namespace BDDAutomation.tasks
 {
-  class LoginPageTask
+  class LoginPT
   {
-    public LoginPagePO loginPageObject;
+    public LoginPO loginPageObject;
 
-    public LoginPageTask()
+    public LoginPT()
     {
-      loginPageObject = new LoginPagePO();
+      loginPageObject = new LoginPO();
     }
 
     public void Login(string email, string password)

@@ -1,6 +1,5 @@
 ﻿using BDDAutomation.tasks;
 using BDDAutomation.utils;
-using System;
 using TechTalk.SpecFlow;
 using Xunit;
 
@@ -11,7 +10,7 @@ namespace BDDAutomation.tests.steps
   {
     WebDriver webDriver;
     DressesPT dressesPt;
-    HomePageTask homePageTask;
+    HomePT homePageTask;
 
     [Given(@"that I'm in the homepage of the automationpractice home page")]
     public void GivenThatIMInTheHomepageOfTheAutomationpracticeHomePage()
@@ -25,7 +24,7 @@ namespace BDDAutomation.tests.steps
     {
       webDriver = WebDriver.Instance;
       webDriver.startChrome();
-      homePageTask = new HomePageTask();
+      homePageTask = new HomePT();
       homePageTask.ClickDressesButton();
       Assert.Equal("Dresses - My Store", webDriver.driver.Title);
     }
@@ -40,7 +39,7 @@ namespace BDDAutomation.tests.steps
     [When(@"I click on the Dresses button to check the dresses")]
     public void WhenIClickOnTheDressesButtonToCheckTheDresses()
     {
-      homePageTask = new HomePageTask();
+      homePageTask = new HomePT();
       homePageTask.ClickDressesButton();
     }
 

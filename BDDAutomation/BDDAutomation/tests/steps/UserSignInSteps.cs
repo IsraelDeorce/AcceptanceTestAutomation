@@ -1,7 +1,5 @@
-﻿using System;
-using BDDAutomation.tasks;
+﻿using BDDAutomation.tasks;
 using BDDAutomation.utils;
-using OpenQA.Selenium;
 using TechTalk.SpecFlow;
 using Xunit;
 
@@ -21,14 +19,14 @@ namespace BDDAutomation.tests.steps
     [When(@"I click on the Sign In Button")]
     public void WhenIClickOnTheSignInButton()
     {
-      HomePageTask element = new HomePageTask();
+      HomePT element = new HomePT();
       element.ClickSignInButton();
     }
 
     [When(@"I provide my email and password to login")]
     public void WhenIProvideMyEmailAndPasswordToLogin()
     {
-      LoginPageTask element = new LoginPageTask();
+      LoginPT element = new LoginPT();
       element.Login("israel.idvj@gmail.com", "12345");
     }
 

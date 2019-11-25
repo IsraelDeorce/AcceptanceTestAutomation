@@ -2,13 +2,13 @@
 
 namespace BDDAutomation.tasks
 {
-  class HomePageTask
+  class HomePT
   {
-    public HomePagePO homePageObject;
+    public HomePO homePageObject;
 
-    public HomePageTask()
+    public HomePT()
     {
-      homePageObject = new HomePagePO();
+      homePageObject = new HomePO();
     }
 
     public void ClickSignInButton()

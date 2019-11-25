@@ -1,16 +1,13 @@
 ﻿using BDDAutomation.utils;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BDDAutomation.pageObjects
 {
-  class HomePagePO
+  class HomePO
   {
     readonly WebDriver webDriver;
 
-    public HomePagePO()
+    public HomePO()
     {
       webDriver = WebDriver.Instance;
     }
